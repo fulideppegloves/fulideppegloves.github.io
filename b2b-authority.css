@@ -258,6 +258,207 @@ html[lang="zh-CN"] .hero h1 {
   background: var(--authority-oxide-dark);
 }
 
+.materials-standards {
+  scroll-margin-top: 88px;
+  position: relative;
+  overflow: hidden;
+  color: var(--authority-ink);
+  background: #eef0ec;
+  border-top: 1px solid rgba(17, 26, 34, 0.12);
+  border-bottom: 1px solid rgba(17, 26, 34, 0.12);
+}
+
+.materials-standards::before {
+  content: "MATERIAL / PERFORMANCE";
+  position: absolute;
+  top: 20px;
+  right: 3vw;
+  color: rgba(17, 26, 34, 0.055);
+  font-family: Bahnschrift, "Aptos Display", sans-serif;
+  font-size: clamp(48px, 8vw, 118px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.standards-heading {
+  position: relative;
+  z-index: 1;
+}
+
+.standards-heading .lead {
+  max-width: 850px;
+}
+
+.standards-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid rgba(17, 26, 34, 0.16);
+  border-radius: 8px;
+  background: rgba(17, 26, 34, 0.16);
+  box-shadow: 0 24px 52px rgba(17, 26, 34, 0.1);
+}
+
+.material-grade-panel,
+.protection-standard-panel {
+  min-width: 0;
+  padding: 36px;
+}
+
+.material-grade-panel {
+  color: #fff;
+  background: #172129;
+}
+
+.protection-standard-panel {
+  background: #fff;
+}
+
+.technical-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #b34036;
+  font-family: Bahnschrift, "Aptos Display", sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.material-grade-panel .technical-label {
+  color: #f0c36c;
+}
+
+.material-grade-panel h3,
+.protection-standard-panel h3 {
+  margin: 0;
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.material-grade-panel > p {
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.material-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 28px 0 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.material-spec-grid > div {
+  min-width: 0;
+  padding: 15px;
+  background: #202d36;
+}
+
+.material-spec-grid dt {
+  color: #f0c36c;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.material-spec-grid dd {
+  margin: 5px 0 0;
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.evidence-rule {
+  margin-top: 24px;
+  padding: 16px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.evidence-rule strong {
+  color: #fff;
+}
+
+.standard-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.standard-item {
+  min-width: 0;
+  min-height: 178px;
+  padding: 20px;
+  border: 1px solid #d9ddd8;
+  border-top: 4px solid #b34036;
+  border-radius: 6px;
+  background: #f8f9f7;
+}
+
+.standard-item:nth-child(2) {
+  border-top-color: #d28a2d;
+}
+
+.standard-item:nth-child(3) {
+  border-top-color: #287459;
+}
+
+.standard-item:nth-child(4) {
+  border-top-color: #172129;
+}
+
+.standard-item b,
+.standard-item strong {
+  display: block;
+  letter-spacing: 0;
+}
+
+.standard-item b {
+  color: #8d332d;
+  font-family: Bahnschrift, "Aptos Display", sans-serif;
+  font-size: 13px;
+}
+
+.standard-item strong {
+  margin-top: 8px;
+  font-size: 19px;
+}
+
+.standard-item p {
+  margin: 9px 0 0;
+  color: #56616a;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.standards-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.standards-disclaimer {
+  margin: 18px 0 0;
+  padding-top: 16px;
+  color: #66717a;
+  border-top: 1px solid #d9ddd8;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
 .verification-strip .container {
   display: grid;
   grid-template-columns: 1.15fr repeat(3, 1fr);
@@ -1145,6 +1346,26 @@ footer {
   .finder-grid,
   .document-grid {
     grid-template-columns: 1fr;
+  }
+
+  .standards-layout,
+  .standard-list {
+    grid-template-columns: 1fr;
+  }
+
+  .material-grade-panel,
+  .protection-standard-panel {
+    padding: 24px;
+  }
+
+  .standards-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .standards-actions .btn {
+    width: 100%;
+    white-space: normal;
   }
 
   .finder-card,
