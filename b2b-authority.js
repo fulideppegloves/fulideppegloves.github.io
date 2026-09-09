@@ -9,10 +9,11 @@
         required: "Please complete this field so the factory can qualify the request.",
         whatsapp: "WhatsApp",
         quote: "Request quote",
-        documentTitle: "Technical document status",
+        documentTitle: "Documents for this SKU",
         documentBody:
-          "Product data sheet, applicable test report and declaration slots are reserved. Files will only be published after verification for this exact SKU.",
+          "Request the product specification, applicable reports or buyer-required records for the exact SKU and order.",
         finderAdded: "Product direction added to your RFQ notes.",
+        documentAdded: "Document requirement added to your inquiry notes.",
       }
     : {
         step1: "01 买家信息",
@@ -22,9 +23,10 @@
         required: "请填写此项，便于工厂判断询盘并准确回复。",
         whatsapp: "WhatsApp",
         quote: "提交询价",
-        documentTitle: "技术文件状态",
-        documentBody: "产品数据表、适用测试报告及声明文件位置已预留。仅在对应 SKU 文件核验后正式发布。",
+        documentTitle: "该 SKU 的资料需求",
+        documentBody: "可按具体 SKU 和订单索取产品规格、适用报告或买家要求的记录。",
         finderAdded: "产品方向已加入询盘备注。",
+        documentAdded: "资料需求已加入询盘备注。",
       };
 
   const normalizeCategory = (value) =>
@@ -72,6 +74,20 @@
 
         document.getElementById("products")?.scrollIntoView({ behavior: "smooth" });
         showLocalToast(copy.finderAdded);
+      });
+    });
+  }
+
+  function initializeDocumentRequests() {
+    document.querySelectorAll("[data-document-request]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const note = button.dataset.documentRequest;
+        const message = document.getElementById("message");
+        if (message && note && !message.value.includes(note)) {
+          message.value = message.value ? `${message.value}\n${note}` : note;
+        }
+        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+        showLocalToast(copy.documentAdded);
       });
     });
   }
@@ -306,7 +322,7 @@
     bar.className = "mobile-trade-actions";
     bar.setAttribute("aria-label", isEnglish ? "Quick contact" : "快速联系");
     bar.innerHTML = `
-      <a class="btn green" href="https://wa.me/message/JF3NK3JK3BGUG1" target="_blank" rel="noopener">${copy.whatsapp}</a>
+      <a class="btn green" href="https://wa.me/85255778242" target="_blank" rel="noopener">${copy.whatsapp}</a>
       <a class="btn" href="#contact">${copy.quote} <span aria-hidden="true">→</span></a>
     `;
     document.body.appendChild(bar);
@@ -337,6 +353,7 @@
   function initialize() {
     initializeHeroSkuRail();
     initializeGuidedFinder();
+    initializeDocumentRequests();
     initializeProgressiveRfq();
     initializeMobileActions();
     enhanceProductDocuments();
