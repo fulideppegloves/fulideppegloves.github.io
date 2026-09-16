@@ -1,20 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://fulideppegloves.github.io/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/index-en.html" />
   </url>
   <url>
     <loc>https://fulideppegloves.github.io/index-en.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/index-en.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/factory.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/factory.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/factory.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/factory.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/inquiry-register.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/inquiry-register.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/inquiry-register.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/inquiry-register.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/guides/leather-grades-and-glove-standards.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/guides/piliao-dengji-yu-shoutao-biaozhun.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/guides/leather-grades-and-glove-standards.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/guides/leather-grades-and-glove-standards.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/categories/welding-gloves.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/categories/dianshan-shoutao.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/categories/welding-gloves.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/categories/welding-gloves.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/categories/driver-gloves.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/categories/siji-shoutao.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/categories/driver-gloves.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/categories/driver-gloves.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/categories/semi-leather-gloves.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/categories/banpi-shoutao.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/categories/semi-leather-gloves.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/categories/semi-leather-gloves.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/categories/pet-handling-gloves.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/categories/chongwu-fanghu-shoutao.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/categories/pet-handling-gloves.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/categories/pet-handling-gloves.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/products/welding-long-cuff-orange.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/products/welding-long-cuff-orange.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/products/welding-long-cuff-orange.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/products/welding-long-cuff-orange.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/products/welding-blue-action.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/products/welding-blue-action.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/products/welding-blue-action.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/products/welding-blue-action.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/products/driver-white-grain.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/products/driver-white-grain.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/products/driver-white-grain.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/products/driver-white-grain.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/products/driver-black-leather.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/products/driver-black-leather.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/products/driver-black-leather.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/products/driver-black-leather.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/products/semi-leather-branded-yellow.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/products/semi-leather-branded-yellow.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/products/semi-leather-branded-yellow.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/products/semi-leather-branded-yellow.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/products/pet-teal-long.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/products/pet-teal-long.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/products/pet-teal-long.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/products/pet-teal-long.html" />
+  </url>
+  <url>
+    <loc>https://fulideppegloves.github.io/products/pet-orange-long.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fulideppegloves.github.io/zh/products/pet-orange-long.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fulideppegloves.github.io/products/pet-orange-long.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fulideppegloves.github.io/products/pet-orange-long.html" />
   </url>
 </urlset>

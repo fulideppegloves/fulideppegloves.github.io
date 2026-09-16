@@ -1,0 +1,219 @@
+{
+  "site": {
+    "baseUrl": "https://fulideppegloves.github.io",
+    "company": "Gaozhou Fulide Leather Products Co., Ltd.",
+    "brand": "Fulide",
+    "email": "delivervalue95@gmail.com",
+    "whatsapp": "+85255778242",
+    "whatsappDisplay": "+852 5577 8242",
+    "wechat": "worktogether8",
+    "chinaPhone": "+86 130 6695 7870",
+    "location": "Gaozhou, Guangdong, China"
+  },
+  "categories": [
+    {
+      "slug": "welding-gloves",
+      "zhSlug": "dianshan-shoutao",
+      "name": "Leather Welding Gloves",
+      "zhName": "皮革焊接手套",
+      "summary": "OEM/ODM leather welding gloves for distributors and importers who need cuff length, lining, reinforcement, stitching and target standard discussions before quotation.",
+      "zhSummary": "面向分销商和进口商的 OEM/ODM 皮革焊接手套，询价前可确认袖口长度、内里、补强、车线和目标标准。",
+      "materials": "Split cowhide, selected grain leather or mixed leather construction can be discussed by application. Exact leather grade and thickness are confirmed by sample and buyer requirement.",
+      "zhMaterials": "可按用途讨论牛二层皮、头层皮或组合皮结构。具体皮料等级和厚度以样品和买家要求确认为准。",
+      "construction": "Long cuff, palm reinforcement, lining, welted seams and heat-resistant thread are configurable where the buyer provides target use and market.",
+      "zhConstruction": "长袖口、掌面补强、内里、包缝和耐热线等配置，可按买家用途和目标市场确认。",
+      "uses": "MIG welding, TIG welding, arc welding, fabrication, metal work and heat-adjacent handling where leather glove construction is appropriate.",
+      "zhUses": "MIG、TIG、手工电弧焊、金属加工及适合皮革手套结构的热源周边搬运。",
+      "custom": "Logo, cuff color, lining, reinforcement, label, bag and carton mark can be discussed after product direction is selected.",
+      "zhCustom": "选定产品方向后，可讨论 Logo、袖口颜色、内里、补强、标签、袋装和外箱唛头。",
+      "image": "assets/products/welding-long-cuff-orange.jpg",
+      "products": ["welding-long-cuff-orange", "welding-blue-action", "welding-series-1", "welding-series-2"]
+    },
+    {
+      "slug": "driver-gloves",
+      "zhSlug": "siji-shoutao",
+      "name": "Leather Driver Gloves",
+      "zhName": "皮革司机手套",
+      "summary": "Leather driver gloves for logistics, material handling and general industrial supply programs that need fit, thumb style, leather selection and branding options.",
+      "zhSummary": "用于物流、物料搬运和工业供应项目的皮革司机手套，可按贴合度、拇指结构、皮料和品牌定制讨论。",
+      "materials": "Grain cowhide, split leather or other leather options should be selected by grip, wear area, flexibility and price target.",
+      "zhMaterials": "头层牛皮、二层皮或其他皮料选项，应按抓握、磨损区域、灵活性和目标价格带选择。",
+      "construction": "Driver pattern, elastic back, thumb style, binding and common wear-area reinforcement are buyer-selectable.",
+      "zhConstruction": "司机手套版型、松紧背、拇指结构、包边和常见磨损区域补强可按买家要求选择。",
+      "uses": "Driving, logistics, warehouse work, light fabrication and general handling.",
+      "zhUses": "驾驶、物流、仓储、轻加工和通用搬运。",
+      "custom": "Leather color, logo mark, cuff binding, size run, hang tag and packaging language can be discussed.",
+      "zhCustom": "可讨论皮料颜色、Logo、袖口包边、尺码段、吊牌和包装语言。",
+      "image": "assets/products/driver-white-grain.jpg",
+      "products": ["driver-white-grain", "driver-black-leather", "driver-gloves-series-1"]
+    },
+    {
+      "slug": "semi-leather-gloves",
+      "zhSlug": "banpi-shoutao",
+      "name": "Semi-Leather Work Gloves",
+      "zhName": "半皮劳保手套",
+      "summary": "Semi-leather work gloves combining leather wear areas with textile backs for construction, logistics and cost-sensitive safety supply.",
+      "zhSummary": "半皮劳保手套把皮革耐磨区域和布背结合，适合建筑、物流和价格敏感型劳保供应。",
+      "materials": "Leather palm or wear panels with textile back. Leather commercial grade should be confirmed against sample, feel, usable area and defect tolerance.",
+      "zhMaterials": "皮掌或易磨区域配布背。皮料商业等级需结合样品、手感、可用面积和瑕疵容忍度确认。",
+      "construction": "Palm patch, knuckle strip, safety cuff and fabric color are typical configurable parts.",
+      "zhConstruction": "掌贴、指关节条、安全袖口和布背颜色是常见可配置部位。",
+      "uses": "Construction supply, warehouse handling, farm work and general industrial handling.",
+      "zhUses": "建筑供应、仓库搬运、农用作业和通用工业搬运。",
+      "custom": "Logo print, fabric color, cuff type, leather coverage and packing can be discussed.",
+      "zhCustom": "可讨论 Logo 印刷、布料颜色、袖口类型、皮革覆盖面积和包装。",
+      "image": "assets/products/semi-leather-branded-yellow.jpg",
+      "products": ["semi-leather-branded-yellow", "half-leather-series-1", "half-leather-series-2"]
+    },
+    {
+      "slug": "pet-handling-gloves",
+      "zhSlug": "chongwu-fanghu-shoutao",
+      "name": "Long Cuff Pet Handling Gloves",
+      "zhName": "长袖口宠物防护手套",
+      "summary": "Long cuff leather handling gloves for special handling scenarios where sleeve length, lining and cleaning expectations must be confirmed before quotation.",
+      "zhSummary": "长袖口皮革防护手套用于特殊处理场景，报价前需确认袖长、内里和清洁要求。",
+      "materials": "Leather shell with lining options. Risk level should be evaluated by the buyer; no glove should be represented as bite-proof without validated evidence.",
+      "zhMaterials": "皮革外层配可选内里。风险等级应由买家评估；没有验证证据时，不声称防咬。",
+      "construction": "Extended cuff, lining, palm thickness and cuff closure are the main points to confirm.",
+      "zhConstruction": "加长袖口、内里、掌面厚度和袖口收口是主要确认点。",
+      "uses": "Pet grooming support, animal handling support and special protective handling where leather coverage is requested.",
+      "zhUses": "宠物美容辅助、动物处理辅助及需要皮革覆盖的特殊防护搬运。",
+      "custom": "Length, lining, color, label, packing and warning copy can be discussed.",
+      "zhCustom": "可讨论长度、内里、颜色、标签、包装和警示说明。",
+      "image": "assets/products/pet-teal-long.jpg",
+      "products": ["pet-teal-long", "pet-orange-long", "pet-gloves-1"]
+    }
+  ],
+  "products": [
+    {
+      "id": "welding-long-cuff-orange",
+      "category": "welding-gloves",
+      "name": "Orange Long Cuff Leather Welding Glove",
+      "zhName": "橙色长袖口皮革焊接手套",
+      "image": "assets/products/welding-long-cuff-orange.jpg",
+      "summary": "Long cuff leather welding glove reference style for welding distributors and OEM buyers.",
+      "zhSummary": "面向焊接用品分销商和 OEM 买家的长袖口皮革焊接手套参考款。",
+      "detail": true
+    },
+    {
+      "id": "welding-blue-action",
+      "category": "welding-gloves",
+      "name": "Blue Leather Welding Glove",
+      "zhName": "蓝色皮革焊接手套",
+      "image": "assets/products/welding-blue-action.jpg",
+      "summary": "Blue leather welding glove reference for quoting leather, cuff, lining and reinforcement requirements.",
+      "zhSummary": "蓝色皮革焊接手套参考款，可用于确认皮料、袖口、内里和补强要求。",
+      "detail": true
+    },
+    {
+      "id": "driver-white-grain",
+      "category": "driver-gloves",
+      "name": "White Grain Leather Driver Glove",
+      "zhName": "白色头层皮司机手套",
+      "image": "assets/products/driver-white-grain.jpg",
+      "summary": "White leather driver glove reference style for logistics and general handling programs.",
+      "zhSummary": "白色皮革司机手套参考款，适合物流和通用搬运项目讨论。",
+      "detail": true
+    },
+    {
+      "id": "driver-black-leather",
+      "category": "driver-gloves",
+      "name": "Black Leather Driver Glove",
+      "zhName": "黑色皮革司机手套",
+      "image": "assets/products/driver-black-leather.jpg",
+      "summary": "Black leather driver glove reference style for private-label and industrial supply programs.",
+      "zhSummary": "黑色皮革司机手套参考款，适合贴牌和工业供应项目讨论。",
+      "detail": true
+    },
+    {
+      "id": "semi-leather-branded-yellow",
+      "category": "semi-leather-gloves",
+      "name": "Yellow Semi-Leather Work Glove",
+      "zhName": "黄色半皮劳保手套",
+      "image": "assets/products/semi-leather-branded-yellow.jpg",
+      "summary": "Semi-leather work glove reference showing leather wear areas and textile back construction.",
+      "zhSummary": "半皮劳保手套参考款，展示皮革耐磨区域和布背结构。",
+      "detail": true
+    },
+    {
+      "id": "pet-teal-long",
+      "category": "pet-handling-gloves",
+      "name": "Teal Long Cuff Leather Handling Glove",
+      "zhName": "青绿色长袖口皮革防护手套",
+      "image": "assets/products/pet-teal-long.jpg",
+      "summary": "Long cuff leather handling glove reference for confirming length, lining and risk notes.",
+      "zhSummary": "长袖口皮革防护手套参考款，用于确认长度、内里和风险说明。",
+      "detail": true
+    },
+    {
+      "id": "pet-orange-long",
+      "category": "pet-handling-gloves",
+      "name": "Orange Long Cuff Leather Handling Glove",
+      "zhName": "橙色长袖口皮革防护手套",
+      "image": "assets/products/pet-orange-long.jpg",
+      "summary": "Long cuff leather handling glove reference style for special protective handling inquiries.",
+      "zhSummary": "长袖口皮革防护手套参考款，适合特殊防护搬运询价。",
+      "detail": true
+    },
+    {
+      "id": "welding-series-1",
+      "category": "welding-gloves",
+      "name": "Welding Glove Reference SKU 1",
+      "zhName": "焊接手套参考 SKU 1",
+      "image": "assets/all-sku/welding-series-1-png.jpg",
+      "summary": "Additional welding glove image for category comparison. Details should be confirmed by sample.",
+      "zhSummary": "用于品类对比的焊接手套图片，具体参数需按样品确认。",
+      "detail": false
+    },
+    {
+      "id": "welding-series-2",
+      "category": "welding-gloves",
+      "name": "Welding Glove Reference SKU 2",
+      "zhName": "焊接手套参考 SKU 2",
+      "image": "assets/all-sku/welding-series-2-png.jpg",
+      "summary": "Additional welding glove image for category comparison. Details should be confirmed by sample.",
+      "zhSummary": "用于品类对比的焊接手套图片，具体参数需按样品确认。",
+      "detail": false
+    },
+    {
+      "id": "driver-gloves-series-1",
+      "category": "driver-gloves",
+      "name": "Driver Glove Reference SKU 1",
+      "zhName": "司机手套参考 SKU 1",
+      "image": "assets/all-sku/driver-gloves-series-1-png.jpg",
+      "summary": "Additional driver glove image for category comparison. Details should be confirmed by sample.",
+      "zhSummary": "用于品类对比的司机手套图片，具体参数需按样品确认。",
+      "detail": false
+    },
+    {
+      "id": "half-leather-series-1",
+      "category": "semi-leather-gloves",
+      "name": "Semi-Leather Glove Reference SKU 1",
+      "zhName": "半皮手套参考 SKU 1",
+      "image": "assets/all-sku/half-leather-series-1-png.jpg",
+      "summary": "Additional semi-leather glove image for category comparison. Details should be confirmed by sample.",
+      "zhSummary": "用于品类对比的半皮手套图片，具体参数需按样品确认。",
+      "detail": false
+    },
+    {
+      "id": "half-leather-series-2",
+      "category": "semi-leather-gloves",
+      "name": "Semi-Leather Glove Reference SKU 2",
+      "zhName": "半皮手套参考 SKU 2",
+      "image": "assets/all-sku/half-leather-series-2-png.jpg",
+      "summary": "Additional semi-leather glove image for category comparison. Details should be confirmed by sample.",
+      "zhSummary": "用于品类对比的半皮手套图片，具体参数需按样品确认。",
+      "detail": false
+    },
+    {
+      "id": "pet-gloves-1",
+      "category": "pet-handling-gloves",
+      "name": "Pet Handling Glove Reference SKU 1",
+      "zhName": "宠物防护手套参考 SKU 1",
+      "image": "assets/all-sku/pet-gloves-1-png.jpg",
+      "summary": "Additional long cuff handling glove image for category comparison. Details should be confirmed by sample.",
+      "zhSummary": "用于品类对比的长袖口防护手套图片，具体参数需按样品确认。",
+      "detail": false
+    }
+  ]
+}

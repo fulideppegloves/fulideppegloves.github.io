@@ -1166,10 +1166,11 @@
           </div>
         </a>
         <div class="nav-links" aria-label="Primary navigation">
-          <a href="#products">Products</a>
-          <a href="#materials-standards">Materials &amp; Standards</a>
+          <a href="categories/welding-gloves.html">Products</a>
+          <a href="guides/leather-grades-and-glove-standards.html">Materials &amp; Standards</a>
           <a href="#oem">OEM/ODM</a>
-          <a href="#capability">Factory</a>
+          <a href="factory.html">Factory</a>
+          <a href="inquiry-register.html">Inquiry Register</a>
           <a href="index.html">&#31616;&#20307;&#20013;&#25991;</a>
           <a href="#contact">Inquiry</a>
         </div>
@@ -1346,6 +1347,13 @@
           <a class="btn secondary" href="#contact">Go to Inquiry Form</a>
         </div>
 
+        <div class="actions" aria-label="Static product category pages">
+          <a class="btn secondary" href="categories/welding-gloves.html">Leather welding gloves</a>
+          <a class="btn secondary" href="categories/driver-gloves.html">Leather driver gloves</a>
+          <a class="btn secondary" href="categories/semi-leather-gloves.html">Semi-leather work gloves</a>
+          <a class="btn secondary" href="categories/pet-handling-gloves.html">Long cuff handling gloves</a>
+        </div>
+
         <div class="category-tabs" id="categoryTabs" aria-label="Product category filters"></div>
         <div class="product-grid" id="productGrid"></div>
 
@@ -1443,12 +1451,20 @@
             <div class="selected-list" id="selectedList"></div>
             <div class="form-grid">
               <div class="field">
-                <label for="name">Name / Company</label>
-                <input id="name" name="name" autocomplete="organization" placeholder="Your name or company" required />
+                <label for="company">Company</label>
+                <input id="company" name="company" autocomplete="organization" placeholder="Legal or trading company name" required />
+              </div>
+              <div class="field">
+                <label for="name">Contact name</label>
+                <input id="name" name="name" autocomplete="name" placeholder="Your name" required />
               </div>
               <div class="field">
                 <label for="email">Email</label>
                 <input id="email" name="email" type="email" autocomplete="email" placeholder="For quotation reply" required />
+              </div>
+              <div class="field">
+                <label for="whatsapp">WhatsApp / Phone</label>
+                <input id="whatsapp" name="whatsapp" autocomplete="tel" placeholder="Include country code if available" />
               </div>
               <div class="field">
                 <label for="market">Target market</label>
@@ -1459,11 +1475,12 @@
                 <input id="quantity" name="quantity" placeholder="Example: 5,000 pairs / SKU" required />
               </div>
               <div class="field">
-                <label for="orderType">Order type</label>
-                <select id="orderType" name="orderType">
-                  <option>OEM private label</option>
-                  <option>ODM new style development</option>
-                  <option>Factory standard product</option>
+                <label for="buyerType">Buyer type</label>
+                <select id="buyerType" name="buyerType">
+                  <option>Importer / distributor</option>
+                  <option>Wholesale buyer</option>
+                  <option>Private-label brand</option>
+                  <option>Factory standard product buyer</option>
                   <option>Sample first</option>
                 </select>
               </div>
@@ -1481,15 +1498,23 @@
                 <label for="documentation">Target standard / report requirement</label>
                 <input id="documentation" name="documentation" placeholder="Example: EN 388 properties, EN 12477 Type A/B, ANSI/ISEA 105, or buyer report format" />
               </div>
+              <div class="field">
+                <label for="targetPrice">Target price band</label>
+                <input id="targetPrice" name="targetPrice" placeholder="Optional: USD / pair or price range" />
+              </div>
+              <div class="field">
+                <label for="deadline">Sample or purchase window</label>
+                <input id="deadline" name="deadline" placeholder="Sample date or expected delivery window" />
+              </div>
               <div class="field full">
                 <label for="message">Specification notes</label>
                 <textarea id="message" name="message" placeholder="Species, grain/split, leather grade criteria, thickness, lining, cuff, reinforcement, logo, packing, color, size, target price, reference photo..."></textarea>
               </div>
             </div>
             <div class="form-actions">
-              <button class="btn full" type="submit">Copy Email / WhatsApp Inquiry</button>
+              <button class="btn full" type="submit">Copy Inquiry Draft</button>
               <button class="btn secondary full" type="button" id="openEmailInquiry">Open Email Draft</button>
-              <a class="btn green" href="https://wa.me/85255778242" target="_blank" rel="noopener">Open WhatsApp</a>
+              <a class="btn green" href="https://wa.me/85255778242" target="_blank" rel="noopener">Open WhatsApp Draft</a>
             </div>
             <p class="form-note">Copy the complete inquiry, send it through WhatsApp or WeChat, or open a prefilled email draft to <a href="mailto:delivervalue95@gmail.com">delivervalue95@gmail.com</a>.</p>
           </form>
@@ -1520,6 +1545,43 @@
         </div>
       </div>
     </section>
+
+    <section class="documents-hub" id="documents" aria-label="Buyer document center">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Document Center</p>
+            <h2>Prepare documents by exact product and order scope.</h2>
+            <p class="lead">Send the SKU, target market and buyer audit requirement. Fulide will confirm which product, test and supplier documents can match the quoted sample and order.</p>
+          </div>
+          <a class="btn secondary" href="#contact">Request Documents</a>
+        </div>
+        <div class="document-grid">
+          <article class="document-card">
+            <span class="doc-type">Product documents</span>
+            <h3>Product Data Sheet</h3>
+            <p>Material, construction, dimensions, size run, packing and version details should be matched to a specific SKU.</p>
+            <span class="doc-status" aria-disabled="true">Available after SKU and order scope are confirmed.</span>
+            <button class="btn secondary document-request" type="button" data-document-request="Document request: please confirm the product data sheet for the target SKU, including material, construction, dimensions, size run, packing and version details.">Request data sheet</button>
+          </article>
+          <article class="document-card">
+            <span class="doc-type">Testing and market requirements</span>
+            <h3>Reports and Declarations</h3>
+            <p>Provide the target standard, level and market so the test plan and document scope can be confirmed for the exact glove.</p>
+            <span class="doc-status" aria-disabled="true">No generic certificate download is published.</span>
+            <button class="btn secondary document-request" type="button" data-document-request="Document request: please confirm target market, applicable standard, target level, test plan and report requirement for the corresponding SKU.">Explain test requirement</button>
+          </article>
+          <article class="document-card">
+            <span class="doc-type">Supplier documents</span>
+            <h3>Factory and Company Pack</h3>
+            <p>Company profile, production process, commercial contact details and applicable factory records are prepared against the buyer checklist.</p>
+            <span class="doc-status" aria-disabled="true">Prepared against buyer checklist.</span>
+            <button class="btn secondary document-request" type="button" data-document-request="Document request: please confirm company profile, production process, commercial contact details and applicable factory records for the buyer checklist.">Request company pack</button>
+          </article>
+        </div>
+        <div class="document-policy"><strong>Document matching rule:</strong> Product data, test files and declarations should match the exact SKU, tested construction, document owner, issue date and applicable scope. Include target market and audit requirements in the inquiry.</div>
+      </div>
+    </section>
   </main>
 
   <button class="btn floating-inquiry" id="floatingInquiry" type="button">Inquiry List: <span id="floatingCount">0</span></button>
@@ -1533,7 +1595,9 @@
       </div>
       <div class="footer-links">
         <a href="#capability">Factory</a>
-        <a href="#products">Products</a>
+        <a href="categories/welding-gloves.html">Products</a>
+        <a href="guides/leather-grades-and-glove-standards.html">Standards Guide</a>
+        <a href="factory.html">Factory</a>
         <a href="#oem">OEM/ODM</a>
           <a href="index.html">&#31616;&#20307;&#20013;&#25991;</a>
         <a href="#contact">Inquiry</a>
@@ -2373,6 +2437,15 @@
       document.body.removeChild(temp);
     }
 
+    function marketingAttribution() {
+      const params = new URLSearchParams(window.location.search);
+      const keys = ["utm_source", "utm_medium", "utm_campaign", "utm_content"];
+      const values = keys
+        .filter((key) => params.has(key))
+        .map((key) => `${key}=${params.get(key)}`);
+      return values.length ? values.join("; ") : document.referrer || "direct / not captured";
+    }
+
     function buildInquiryMessage(form) {
       const selectedProducts = [...selected.values()].map((item) => `- ${item.name}`).join("\n") || "- No product selected yet";
       const data = new FormData(form);
@@ -2380,13 +2453,18 @@
       return [
         "Fulide OEM/ODM Inquiry",
         "",
-        `Name / Company: ${data.get("name") || ""}`,
+        `Company: ${data.get("company") || ""}`,
+        `Contact name: ${data.get("name") || ""}`,
         `Email: ${data.get("email") || ""}`,
+        `WhatsApp / Phone: ${data.get("whatsapp") || ""}`,
         `Target market: ${data.get("market") || ""}`,
         `Estimated quantity: ${data.get("quantity") || ""}`,
-        `Order type: ${data.get("orderType") || ""}`,
+        `Marketing source: ${marketingAttribution()}`,
+        `Buyer type: ${data.get("buyerType") || ""}`,
+        `Target price band: ${data.get("targetPrice") || ""}`,
         `Main category: ${data.get("category") || ""}`,
         `Target standard / report requirement: ${data.get("documentation") || ""}`,
+        `Purchase window: ${data.get("deadline") || ""}`,
         "",
         "Selected products:",
         selectedProducts,

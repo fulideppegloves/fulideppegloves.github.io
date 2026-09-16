@@ -31,6 +31,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Generate SEO pages
+        run: node scripts/build-seo-pages.js
+      - name: Run static checks
+        run: python -m unittest tests.test_marketing_site tests.test_seo_static_pages
       - name: Setup Pages
         uses: actions/configure-pages@v6
       - name: Upload artifact
