@@ -208,20 +208,23 @@ function write(relative, content) {
 
 function buildSitemap() {
   const urls = [
-    ["", "", "index-en.html"],
-    ["index-en.html", "", "index-en.html"],
-    ["factory.html", "zh/factory.html"],
-    ["inquiry-register.html", "zh/inquiry-register.html"],
-    ["guides/leather-grades-and-glove-standards.html", "zh/guides/piliao-dengji-yu-shoutao-biaozhun.html"],
-    ...categories.map((category) => [`categories/${category.slug}.html`, `zh/categories/${category.zhSlug}.html`]),
-    ...products.filter((product) => product.detail).map((product) => [`products/${product.id}.html`, `zh/products/${product.id}.html`])
+    "",
+    "index-en.html",
+    "factory.html",
+    "zh/factory.html",
+    "inquiry-register.html",
+    "zh/inquiry-register.html",
+    "guides/leather-grades-and-glove-standards.html",
+    "zh/guides/piliao-dengji-yu-shoutao-biaozhun.html",
+    ...categories.map((category) => `categories/${category.slug}.html`),
+    ...categories.map((category) => `zh/categories/${category.zhSlug}.html`),
+    ...products.filter((product) => product.detail).map((product) => `products/${product.id}.html`),
+    ...products.filter((product) => product.detail).map((product) => `zh/products/${product.id}.html`)
   ];
   const today = new Date().toISOString().slice(0, 10);
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n  xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.map(([locPath, zhPath, enPath = locPath]) => {
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((locPath) => {
     const loc = locPath === "" ? `${site.baseUrl}/` : `${site.baseUrl}/${locPath}`;
-    const zhHref = zhPath === "" ? `${site.baseUrl}/` : `${site.baseUrl}/${zhPath}`;
-    const enHref = enPath === "" ? `${site.baseUrl}/` : `${site.baseUrl}/${enPath}`;
-    return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${enPath === "" || enPath === "index-en.html" ? "1.0" : "0.8"}</priority>\n    <xhtml:link rel="alternate" hreflang="zh-CN" href="${zhHref}" />\n    <xhtml:link rel="alternate" hreflang="en" href="${enHref}" />\n    <xhtml:link rel="alternate" hreflang="x-default" href="${enHref}" />\n  </url>`;
+    return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${today}</lastmod>\n  </url>`;
   }).join("\n")}\n</urlset>\n`;
 }
 
