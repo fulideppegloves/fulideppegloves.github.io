@@ -100,10 +100,14 @@ class SeoStaticPagesTests(unittest.TestCase):
 
     def test_sitemap_includes_generated_pages(self):
         sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
+        text_sitemap = (ROOT / "sitemap.txt").read_text(encoding="utf-8")
         self.assertIn("https://fulideppegloves.github.io/", sitemap)
         self.assertIn("https://fulideppegloves.github.io/index-en.html", sitemap)
+        self.assertIn("https://fulideppegloves.github.io/", text_sitemap)
+        self.assertIn("https://fulideppegloves.github.io/index-en.html", text_sitemap)
         for page in self.generated_pages():
             self.assertIn(f"https://fulideppegloves.github.io/{page}", sitemap)
+            self.assertIn(f"https://fulideppegloves.github.io/{page}", text_sitemap)
 
     def test_category_pages_expose_products_without_javascript(self):
         for page in (
@@ -133,6 +137,7 @@ class SeoStaticPagesTests(unittest.TestCase):
         self.assertIn("User-agent: Bingbot\nAllow: /", robots)
         self.assertIn("User-agent: OAI-SearchBot\nAllow: /", robots)
         self.assertIn("Sitemap: https://fulideppegloves.github.io/sitemap.xml", robots)
+        self.assertIn("Sitemap: https://fulideppegloves.github.io/sitemap.txt", robots)
 
 
 if __name__ == "__main__":

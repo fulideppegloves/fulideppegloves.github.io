@@ -11,3 +11,4 @@ User-agent: OAI-SearchBot
 Allow: /
 
 Sitemap: https://fulideppegloves.github.io/sitemap.xml
+Sitemap: https://fulideppegloves.github.io/sitemap.txt

@@ -206,8 +206,8 @@ function write(relative, content) {
   fs.writeFileSync(path.join(root, relative), content, "utf8");
 }
 
-function buildSitemap() {
-  const urls = [
+function sitemapPaths() {
+  return [
     "",
     "index-en.html",
     "factory.html",
@@ -221,11 +221,23 @@ function buildSitemap() {
     ...products.filter((product) => product.detail).map((product) => `products/${product.id}.html`),
     ...products.filter((product) => product.detail).map((product) => `zh/products/${product.id}.html`)
   ];
+}
+
+function sitemapUrl(locPath) {
+  return locPath === "" ? `${site.baseUrl}/` : `${site.baseUrl}/${locPath}`;
+}
+
+function buildSitemap() {
+  const urls = sitemapPaths();
   const today = new Date().toISOString().slice(0, 10);
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((locPath) => {
-    const loc = locPath === "" ? `${site.baseUrl}/` : `${site.baseUrl}/${locPath}`;
+    const loc = sitemapUrl(locPath);
     return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${today}</lastmod>\n  </url>`;
   }).join("\n")}\n</urlset>\n`;
+}
+
+function buildTextSitemap() {
+  return `${sitemapPaths().map(sitemapUrl).join("\n")}\n`;
 }
 
 function main() {
@@ -245,6 +257,7 @@ function main() {
   write("zh/inquiry-register.html", inquiryPage("zh-CN"));
   write("docs/inquiry-register-template.csv", "date,source,landing_page,contact_channel,buyer_company,buyer_name,country_or_market,product_or_category,quantity,target_price,quote_status,sample_status,order_status,next_action,notes\n");
   write("sitemap.xml", buildSitemap());
+  write("sitemap.txt", buildTextSitemap());
 }
 
 main();
