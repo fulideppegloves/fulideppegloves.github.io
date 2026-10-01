@@ -72,6 +72,8 @@ class SeoStaticPagesTests(unittest.TestCase):
             parser = LinkParser()
             content = (ROOT / page).read_text(encoding="utf-8")
             parser.feed(content)
+            self.assertIn("https://www.googletagmanager.com/gtag/js?id=G-FETFTBXF2P", content, page)
+            self.assertIn('gtag("config", "G-FETFTBXF2P")', content, page)
             self.assertIn("delivervalue95@gmail.com", content, page)
             self.assertIn("https://wa.me/85255778242?text=", content, page)
             self.assertEqual(1, len(parser.canonicals), page)

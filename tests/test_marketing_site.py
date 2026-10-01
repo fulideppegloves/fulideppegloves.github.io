@@ -27,6 +27,8 @@ class MarketingSiteTests(unittest.TestCase):
     def test_bilingual_inquiry_paths_expose_reviewable_email_draft(self):
         for filename in ("index-en.html", "index.html"):
             content = (SITE_ROOT / filename).read_text(encoding="utf-8")
+            self.assertIn("https://www.googletagmanager.com/gtag/js?id=G-FETFTBXF2P", content, filename)
+            self.assertIn('gtag("config", "G-FETFTBXF2P")', content, filename)
             self.assertIn("delivervalue95@gmail.com", content, filename)
             self.assertIn('id="openEmailInquiry"', content, filename)
             self.assertIn("mailto:delivervalue95@gmail.com", content, filename)

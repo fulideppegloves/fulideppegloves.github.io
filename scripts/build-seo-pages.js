@@ -6,6 +6,7 @@ const catalog = JSON.parse(fs.readFileSync(path.join(root, "data", "seo-catalog.
 const { site, categories, products } = catalog;
 const productById = new Map(products.map((product) => [product.id, product]));
 const categoryBySlug = new Map(categories.map((category) => [category.slug, category]));
+const gaMeasurementId = "G-FETFTBXF2P";
 
 function escapeHtml(value) {
   return String(value)
@@ -73,6 +74,13 @@ function pageShell({ lang, title, description, canonical, alternate, body, schem
   <meta property="og:url" content="${canonical}">
   <meta property="og:image" content="${site.baseUrl}/assets/hero-glove-wall.jpg">
   <title>${escapeHtml(title)}</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "${gaMeasurementId}");
+  </script>
   <script type="application/ld+json">${JSON.stringify(schema)}</script>
   <style>
     :root{--red:#8b1e1e;--ink:#121826;--muted:#596275;--line:#e5e7eb;--paper:#f7f4ef;--green:#176c3a}
