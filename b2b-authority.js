@@ -1,33 +1,120 @@
 (function () {
-  const isEnglish = document.documentElement.lang === "en";
-  const copy = isEnglish
-    ? {
-        step1: "01 Buyer profile",
-        step2: "02 Product requirements",
-        next: "Continue to specifications",
-        back: "Back to buyer details",
-        required: "Please complete this field so the factory can qualify the request.",
-        whatsapp: "WhatsApp",
-        quote: "Request quote",
-        documentTitle: "Documents for this SKU",
-        documentBody:
-          "Request the product specification, applicable reports or buyer-required records for the exact SKU and order.",
-        finderAdded: "Product direction added to your RFQ notes.",
-        documentAdded: "Document requirement added to your inquiry notes.",
-      }
-    : {
-        step1: "01 买家信息",
-        step2: "02 产品需求",
-        next: "继续填写产品规格",
-        back: "返回买家信息",
-        required: "请填写此项，便于工厂判断询盘并准确回复。",
-        whatsapp: "WhatsApp",
-        quote: "提交询价",
-        documentTitle: "该 SKU 的资料需求",
-        documentBody: "可按具体 SKU 和订单索取产品规格、适用报告或买家要求的记录。",
-        finderAdded: "产品方向已加入询盘备注。",
-        documentAdded: "资料需求已加入询盘备注。",
-      };
+  const COPY_BY_LANG = {
+    en: {
+      step1: "01 Buyer profile",
+      step2: "02 Product requirements",
+      next: "Continue to specifications",
+      back: "Back to buyer details",
+      required: "Please complete this field so the factory can qualify the request.",
+      whatsapp: "WhatsApp",
+      quote: "Request quote",
+      documentTitle: "Documents for this SKU",
+      documentBody:
+        "Request the product specification, applicable reports or buyer-required records for the exact SKU and order.",
+      finderAdded: "Product direction added to your RFQ notes.",
+      documentAdded: "Document requirement added to your inquiry notes.",
+      ariaView: "View {name}",
+      catDefault: "Leather glove",
+      viewSku: "View SKU →",
+      progressLabel: "Inquiry progress",
+      quickContact: "Quick contact",
+    },
+    "zh-CN": {
+      step1: "01 买家信息",
+      step2: "02 产品需求",
+      next: "继续填写产品规格",
+      back: "返回买家信息",
+      required: "请填写此项，便于工厂判断询盘并准确回复。",
+      whatsapp: "WhatsApp",
+      quote: "提交询价",
+      documentTitle: "该 SKU 的资料需求",
+      documentBody: "可按具体 SKU 和订单索取产品规格、适用报告或买家要求的记录。",
+      finderAdded: "产品方向已加入询盘备注。",
+      documentAdded: "资料需求已加入询盘备注。",
+      ariaView: "查看 {name}",
+      catDefault: "皮革手套",
+      viewSku: "查看详情 →",
+      progressLabel: "询盘填写进度",
+      quickContact: "快速联系",
+    },
+    ar: {
+      step1: "01 ملف المشتري",
+      step2: "02 متطلبات المنتج",
+      next: "متابعة إلى المواصفات",
+      back: "العودة إلى بيانات المشتري",
+      required: "يرجى إكمال هذا الحقل ليتمكن المصنع من تقييم الطلب.",
+      whatsapp: "WhatsApp",
+      quote: "اطلب عرض سعر",
+      documentTitle: "مستندات هذا المنتج (SKU)",
+      documentBody:
+        "اطلب مواصفات المنتج أو التقارير المطبقة أو السجلات المطلوبة من المشتري لـ SKU والطلب المحددين.",
+      finderAdded: "تمت إضافة توجه المنتج إلى ملاحظات طلبك.",
+      documentAdded: "تمت إضافة متطلب المستندات إلى ملاحظات استفسارك.",
+      ariaView: "عرض {name}",
+      catDefault: "قفاز جلدي",
+      viewSku: "عرض المنتج ←",
+      progressLabel: "تقدم الاستفسار",
+      quickContact: "تواصل سريع",
+    },
+    vi: {
+      step1: "01 Hồ sơ người mua",
+      step2: "02 Yêu cầu sản phẩm",
+      next: "Tiếp tục điền thông số",
+      back: "Quay lại thông tin người mua",
+      required: "Vui lòng điền trường này để nhà máy có thể đánh giá yêu cầu.",
+      whatsapp: "WhatsApp",
+      quote: "Yêu cầu báo giá",
+      documentTitle: "Tài liệu cho SKU này",
+      documentBody:
+        "Yêu cầu thông số sản phẩm, báo cáo áp dụng hoặc hồ sơ mà người mua yêu cầu cho đúng SKU và đơn hàng.",
+      finderAdded: "Định hướng sản phẩm đã được thêm vào ghi chú RFQ của bạn.",
+      documentAdded: "Yêu cầu tài liệu đã được thêm vào ghi chú yêu cầu của bạn.",
+      ariaView: "Xem {name}",
+      catDefault: "Găng tay da",
+      viewSku: "Xem SKU →",
+      progressLabel: "Tiến độ yêu cầu",
+      quickContact: "Liên hệ nhanh",
+    },
+    th: {
+      step1: "01 ข้อมูลผู้ซื้อ",
+      step2: "02 ความต้องการสินค้า",
+      next: "ดำเนินการกรอกสเปกต่อ",
+      back: "กลับไปข้อมูลผู้ซื้อ",
+      required: "กรุณากรอกช่องนี้เพื่อให้โรงงานประเมินคำขอได้",
+      whatsapp: "WhatsApp",
+      quote: "ขอใบเสนอราคา",
+      documentTitle: "เอกสารสำหรับ SKU นี้",
+      documentBody: "ขอสเปกสินค้า รายงานที่เกี่ยวข้อง หรือเอกสารที่ผู้ซื้อระบุ สำหรับ SKU และคำสั่งซื้อที่ exact",
+      finderAdded: "เพิ่มทิศทางสินค้าไปยังบันทึก RFQ ของคุณแล้ว",
+      documentAdded: "เพิ่มความต้องการเอกสารไปยังบันทึกการสอบถามของคุณแล้ว",
+      ariaView: "ดู {name}",
+      catDefault: "ถุงมือหนัง",
+      viewSku: "ดู SKU →",
+      progressLabel: "ความคืบหน้าการสอบถาม",
+      quickContact: "ติดต่อด่วน",
+    },
+    id: {
+      step1: "01 Profil pembeli",
+      step2: "02 Kebutuhan produk",
+      next: "Lanjut ke spesifikasi",
+      back: "Kembali ke data pembeli",
+      required: "Harap lengkapi kolom ini agar pabrik dapat menilai permintaan.",
+      whatsapp: "WhatsApp",
+      quote: "Minta penawaran",
+      documentTitle: "Dokumen untuk SKU ini",
+      documentBody:
+        "Minta spesifikasi produk, laporan yang berlaku, atau catatan yang dibutuhkan pembeli untuk SKU dan pesanan yang tepat.",
+      finderAdded: "Arah produk ditambahkan ke catatan RFQ Anda.",
+      documentAdded: "Kebutuhan dokumen ditambahkan ke catatan inquiry Anda.",
+      ariaView: "Lihat {name}",
+      catDefault: "Sarung tangan kulit",
+      viewSku: "Lihat SKU →",
+      progressLabel: "Progres inquiry",
+      quickContact: "Kontak cepat",
+    },
+  };
+
+  const copy = COPY_BY_LANG[document.documentElement.lang] || COPY_BY_LANG.en;
 
   const normalizeCategory = (value) =>
     String(value || "")
@@ -104,7 +191,7 @@
       card.dataset.heroCategory = product.category || "";
       card.setAttribute(
         "aria-label",
-        isEnglish ? `View ${product.name}` : `查看 ${product.name}`
+        copy.ariaView.replace("{name}", product.name)
       );
       if (duplicate) {
         card.tabIndex = -1;
@@ -119,11 +206,11 @@
       const cardCopy = document.createElement("span");
       cardCopy.className = "hero-sku-copy";
       const category = document.createElement("small");
-      category.textContent = product.category || (isEnglish ? "Leather glove" : "皮革手套");
+      category.textContent = product.category || copy.catDefault;
       const name = document.createElement("strong");
       name.textContent = product.name;
       const action = document.createElement("em");
-      action.textContent = isEnglish ? "View SKU →" : "查看详情 →";
+      action.textContent = copy.viewSku;
       cardCopy.append(category, name, action);
       card.append(image, cardCopy);
       return card;
@@ -228,7 +315,7 @@
 
     const progress = document.createElement("div");
     progress.className = "rfq-progress";
-    progress.setAttribute("aria-label", isEnglish ? "Inquiry progress" : "询盘填写进度");
+    progress.setAttribute("aria-label", copy.progressLabel);
     progress.innerHTML = `
       <div class="rfq-progress-step active" data-progress-step="1"><span>01</span>${copy.step1.replace("01 ", "")}</div>
       <div class="rfq-progress-step" data-progress-step="2"><span>02</span>${copy.step2.replace("02 ", "")}</div>
@@ -320,7 +407,7 @@
     if (document.querySelector(".mobile-trade-actions")) return;
     const bar = document.createElement("div");
     bar.className = "mobile-trade-actions";
-    bar.setAttribute("aria-label", isEnglish ? "Quick contact" : "快速联系");
+    bar.setAttribute("aria-label", copy.quickContact);
     bar.innerHTML = `
       <a class="btn green" href="https://wa.me/85255778242" target="_blank" rel="noopener">${copy.whatsapp}</a>
       <a class="btn" href="#contact">${copy.quote} <span aria-hidden="true">→</span></a>

@@ -37,6 +37,8 @@ jobs:
           node-version: 22
       - name: Generate SEO pages
         run: node scripts/build-seo-pages.js
+      - name: Generate additional-language homepages
+        run: node scripts/build-homepages.js
       - name: Run static checks
         run: python -m unittest tests.test_marketing_site tests.test_seo_static_pages
       - name: Setup Pages

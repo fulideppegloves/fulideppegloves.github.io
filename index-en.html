@@ -170,6 +170,51 @@
       color: var(--red);
     }
 
+    .lang-switch {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      margin-left: 6px;
+      padding-left: 16px;
+      border-left: 1px solid var(--line);
+    }
+
+    .lang-switch a {
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .lang-switch a[aria-current="true"] {
+      color: var(--red);
+    }
+
+    .footer-links .lang-switch {
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .footer-links .lang-switch a {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-links .lang-switch a[aria-current="true"] {
+      color: #fff;
+    }
+
+    @media (max-width: 960px) {
+      .lang-switch {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: 0;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+    }
+
     .nav-actions {
       display: flex;
       align-items: center;
@@ -635,6 +680,87 @@
       margin-right: 8px;
       color: var(--red);
       font-weight: 900;
+    }
+
+    .name-toggle {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: none;
+      font: inherit;
+      color: inherit;
+      text-align: inherit;
+      cursor: pointer;
+    }
+
+    .name-toggle .plus-mark {
+      position: relative;
+      flex: none;
+      align-self: center;
+      width: 17px;
+      height: 17px;
+      margin-left: auto;
+      border-radius: 50%;
+      transition: transform 0.28s ease, background-color 0.28s ease;
+    }
+
+    .name-toggle .plus-mark::before,
+    .name-toggle .plus-mark::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 2px;
+      border-radius: 1px;
+      background: var(--red);
+      transform: translate(-50%, -50%);
+    }
+
+    .name-toggle .plus-mark::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .product-card.is-open .name-toggle .plus-mark {
+      transform: rotate(45deg);
+      background-color: rgba(139, 30, 30, 0.08);
+    }
+
+    .spec-list {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      margin: 0;
+      transform: translateY(-6px);
+      transition: max-height 0.34s ease, opacity 0.26s ease, transform 0.34s ease, margin 0.34s ease;
+    }
+
+    .product-card.is-open .spec-list {
+      max-height: 240px;
+      opacity: 1;
+      margin: 0 0 14px;
+      transform: translateY(0);
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .product-card:hover .spec-list,
+      .product-card:focus-within .spec-list {
+        max-height: 240px;
+        opacity: 1;
+        margin: 0 0 14px;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .spec-list,
+      .name-toggle .plus-mark {
+        transition: none;
+      }
     }
 
     .tag-row {
@@ -1178,7 +1304,14 @@
           <a href="#oem">OEM/ODM</a>
           <a href="factory.html">Factory</a>
           <a href="inquiry-register.html">Inquiry Register</a>
-          <a href="index.html">&#31616;&#20307;&#20013;&#25991;</a>
+          <span class="lang-switch" aria-label="Language">
+            <a href="index.html">中文</a>
+            <a href="index-en.html" aria-current="true">EN</a>
+            <a href="index-ar.html">العربية</a>
+            <a href="index-vi.html">Tiếng Việt</a>
+            <a href="index-th.html">ไทย</a>
+            <a href="index-id.html">Bahasa</a>
+          </span>
           <a href="#contact">Inquiry</a>
         </div>
         <div class="nav-actions">
@@ -1606,7 +1739,14 @@
         <a href="guides/leather-grades-and-glove-standards.html">Standards Guide</a>
         <a href="factory.html">Factory</a>
         <a href="#oem">OEM/ODM</a>
-          <a href="index.html">&#31616;&#20307;&#20013;&#25991;</a>
+          <span class="lang-switch" aria-label="Language">
+            <a href="index.html">中文</a>
+            <a href="index-en.html" aria-current="true">EN</a>
+            <a href="index-ar.html">العربية</a>
+            <a href="index-vi.html">Tiếng Việt</a>
+            <a href="index-th.html">ไทย</a>
+            <a href="index-id.html">Bahasa</a>
+          </span>
         <a href="#contact">Inquiry</a>
       </div>
     </div>
@@ -2391,7 +2531,7 @@
             </div>
             <div class="product-body">
               <span class="pill">${product.category}</span>
-              <h3>${product.name}</h3>
+              <h3><button class="name-toggle" type="button" aria-expanded="false">${product.name}<span class="plus-mark" aria-hidden="true"></span></button></h3>
               <p>${product.desc}</p>
               <div class="tag-row">
                 ${product.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
@@ -2406,7 +2546,27 @@
           </article>
         `;
       }).join("");
+      wireCardDisclosure();
     }
+
+    function wireCardDisclosure() {
+      const hoverCapable = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+      if (hoverCapable || !("IntersectionObserver" in window)) return;
+      const opener = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("is-open", entry.isIntersecting);
+        });
+      }, { rootMargin: "-14% 0px -56% 0px" });
+      grid.querySelectorAll(".product-card").forEach((card) => opener.observe(card));
+    }
+
+    grid.addEventListener("click", (event) => {
+      const toggle = event.target.closest(".name-toggle");
+      if (!toggle) return;
+      const card = toggle.closest(".product-card");
+      const open = card.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
 
     function renderSelected() {
       const items = [...selected.values()];
