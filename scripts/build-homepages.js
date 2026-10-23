@@ -13,6 +13,7 @@ const {
   LANGS, LANG, pick, T, I18N, site, categories, products, productById,
   homePath, catPath, prodPath, guidePath, factoryPath, inquiryPath,
   whatsappLink, escapeHtml, gaMeasurementId,
+  faqItems, faqSchema,
 } = shared;
 
 const root = path.resolve(__dirname, "..");
@@ -124,6 +125,7 @@ const HOME = {
     id: "Buka daftar inquiry untuk mencatat produk, jumlah, dan pasar target, lalu kirim via WhatsApp atau email.",
   },
   waPre: { en: "Inquiry about: ", "zh-CN": "询盘：", ar: "استفسار حول: ", vi: "Yêu cầu về: ", th: "สอบถามเรื่อง: ", id: "Pertanyaan tentang: " },
+  faqKicker: { en: "Common buyer questions", "zh-CN": "买家常见问题", ar: "أسئلة المشتري الشائعة", vi: "Câu hỏi người mua phổ biến", th: "คำถามผู้ซื้อที่พบบ่อย", id: "Pertanyaan pembeli umum" },
 };
 
 const OG_LOCALE = { en: "en_US", "zh-CN": "zh_CN", ar: "ar_AR", vi: "vi_VN", th: "th_TH", id: "id_ID" };
@@ -186,6 +188,12 @@ function processSteps(lang) {
   return HOME.processSteps.map((s) => `<div class="hp-step"><b>${s.b}</b><strong>${hp(lang, s.strong)}</strong><p>${hp(lang, s.p)}</p></div>`).join("");
 }
 
+function faqSectionHome(lang) {
+  const items = faqItems(lang).map((it) => `<div class="hp-faq-item"><h3>${escapeHtml(it.q)}</h3><p>${escapeHtml(it.a)}</p></div>`).join("");
+  const cta = `<div class="hp-hero-actions"><a class="btn green" href="https://wa.me/${site.whatsapp.replace(/[^0-9]/g, "")}" target="_blank" rel="noopener">WhatsApp</a><a class="btn" href="${inquiryPath(lang)}">${T(lang, "inquiry")}</a></div>`;
+  return `    <section class="hp-faq" id="faq"><div class="hp-container"><div class="hp-section-head"><div><p class="hp-kicker">${escapeHtml(hp(lang, "faqKicker"))}</p><h2>${escapeHtml(T(lang, "buyerFaqTitle"))}</h2></div></div><div class="hp-faq-grid">${items}</div>${cta}</div></section>`;
+}
+
 function homePage(lang) {
   const isRtl = LANG[lang].dir === "rtl";
   const lpFn = (code) => homePath(code);
@@ -239,6 +247,9 @@ ${xdefault}
       "telephone": "${site.whatsapp}",
       "address": { "@type": "PostalAddress", "addressLocality": "Gaozhou", "addressRegion": "Guangdong", "addressCountry": "CN" }
     }
+  </script>
+  <script type="application/ld+json">
+    ${JSON.stringify(faqSchema(lang))}
   </script>
   <style>${css}</style>
 </head>
@@ -356,6 +367,7 @@ ${xdefault}
         </div>
       </div>
     </section>
+${faqSectionHome(lang)}
   </main>
 
   ${shared.footer(lang)}
@@ -490,6 +502,11 @@ function styleSheet(isRtl) {
     .hp-contact .btn { background: #fff; color: var(--red); }
     .hp-contact .btn:hover { background: #f1e9e9; }
     .hp-contact .btn.green { background: var(--green); color: #fff; }
+    .hp-faq { background: var(--paper); }
+    .hp-faq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 26px 0 22px; }
+    .hp-faq-item { border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; background: #fff; }
+    .hp-faq-item h3 { margin: 0 0 8px; font-size: 17px; line-height: 1.3; overflow-wrap: anywhere; }
+    .hp-faq-item p { margin: 0; color: var(--muted); font-size: 14px; }
     .footer { border-top: 1px solid var(--line); padding: 26px 0; font-size: 14px; color: var(--muted); }
     .footer strong { color: var(--ink); }
     @media (prefers-reduced-motion: reduce) {

@@ -41,6 +41,9 @@
       "address": { "@type": "PostalAddress", "addressLocality": "Gaozhou", "addressRegion": "Guangdong", "addressCountry": "CN" }
     }
   </script>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Fulide สามารถเสนอราคาสำหรับคำสั่งซื้อ OEM หรือแบรนด์ของตนเองได้หรือไม่?","acceptedAnswer":{"@type":"Answer","text":"ได้ ส่งทิศทางสินค้า ตลาดเป้าหมาย จำนวน หมายเหตุโลโก้หรือบรรจุภัณฑ์ และเอกสารที่ต้องการ โรงงานจะเสนอราคาเมื่อขอบเขตชัดเจน"}},{"@type":"Question","name":"เกรดหนังกับระดับการป้องกันของถุงมือเป็นเรื่องเดียวกันหรือไม่?","acceptedAnswer":{"@type":"Answer","text":"ไม่ เกรดหนังเป็นแนวคิดเชิงพาณิชย์ในการเลือกวัสดุ ระดับการป้องกันของถุงมือมาจากการทดสอบเช่น EN 388 ANSI/ISEA 105 EN 407 หรือ EN 12477 เมื่อใช้ได้"}},{"@type":"Question","name":"คุณใช้หนังหรือวัสดุใดสำหรับถุงมือความปลอดภัย?","acceptedAnswer":{"@type":"Answer","text":"Fulide เลือกหนังตามเกรดเชิงพาณิชย์ — พื้นที่หนัง ความทนทานต่อตำหนิ ความหนา และสัมผัส — รวมถึงวัสดุบุผิว ข้อมือ และการเสริมแรงที่สอดคล้องกับการใช้งานเป้าหมาย ยืนยันตัวอย่างก่อนผลิตจริงเพื่อให้สัมผัสและโครงสร้างตรงกับตลาดของคุณ"}},{"@type":"Question","name":"คุณให้รายงานการทดสอบหรือการรับรองหรือไม่?","acceptedAnswer":{"@type":"Answer","text":"โรงงานจะเสนอราคาเมื่อขอบเขตชัดเจน เบื้องต้นแจ้งมาตรฐานที่ตลาดคุณต้องการ เช่น EN 388 ANSI/ISEA 105 EN 407 หรือ EN 12477 รวมถึงการทดสอบและรายงานที่ระบุชัดเจน แล้วเราจะยืนยันว่าหลักฐานปัจจุบันรองรับอะไรบ้าง"}},{"@type":"Question","name":"ฉันเริ่มสอบถามกับ Fulide ได้อย่างไร?","acceptedAnswer":{"@type":"Answer","text":"ส่งทิศทางสินค้า ตลาดเป้าหมาย จำนวน หมายเหตุโลโก้หรือบรรจุภัณฑ์ และเอกสารที่ต้องการ ไฟล์บรีฟที่ชัดเจนช่วยให้โรงงานเสนอราคาเร็วขึ้นและลดการทำตัวอย่างใหม่"}}]}
+  </script>
   <style>
     :root {
       --red: #8b1e1e; --red-dark: #681717; --ink: #121826; --muted: #596275;
@@ -137,6 +140,11 @@
     .hp-contact .btn { background: #fff; color: var(--red); }
     .hp-contact .btn:hover { background: #f1e9e9; }
     .hp-contact .btn.green { background: var(--green); color: #fff; }
+    .hp-faq { background: var(--paper); }
+    .hp-faq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 26px 0 22px; }
+    .hp-faq-item { border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; background: #fff; }
+    .hp-faq-item h3 { margin: 0 0 8px; font-size: 17px; line-height: 1.3; overflow-wrap: anywhere; }
+    .hp-faq-item p { margin: 0; color: var(--muted); font-size: 14px; }
     .footer { border-top: 1px solid var(--line); padding: 26px 0; font-size: 14px; color: var(--muted); }
     .footer strong { color: var(--ink); }
     @media (prefers-reduced-motion: reduce) {
@@ -319,6 +327,7 @@
         </div>
       </div>
     </section>
+    <section class="hp-faq" id="faq"><div class="hp-container"><div class="hp-section-head"><div><p class="hp-kicker">คำถามผู้ซื้อที่พบบ่อย</p><h2>คำถามที่พบบ่อยสำหรับผู้ซื้อ</h2></div></div><div class="hp-faq-grid"><div class="hp-faq-item"><h3>Fulide สามารถเสนอราคาสำหรับคำสั่งซื้อ OEM หรือแบรนด์ของตนเองได้หรือไม่?</h3><p>ได้ ส่งทิศทางสินค้า ตลาดเป้าหมาย จำนวน หมายเหตุโลโก้หรือบรรจุภัณฑ์ และเอกสารที่ต้องการ โรงงานจะเสนอราคาเมื่อขอบเขตชัดเจน</p></div><div class="hp-faq-item"><h3>เกรดหนังกับระดับการป้องกันของถุงมือเป็นเรื่องเดียวกันหรือไม่?</h3><p>ไม่ เกรดหนังเป็นแนวคิดเชิงพาณิชย์ในการเลือกวัสดุ ระดับการป้องกันของถุงมือมาจากการทดสอบเช่น EN 388 ANSI/ISEA 105 EN 407 หรือ EN 12477 เมื่อใช้ได้</p></div><div class="hp-faq-item"><h3>คุณใช้หนังหรือวัสดุใดสำหรับถุงมือความปลอดภัย?</h3><p>Fulide เลือกหนังตามเกรดเชิงพาณิชย์ — พื้นที่หนัง ความทนทานต่อตำหนิ ความหนา และสัมผัส — รวมถึงวัสดุบุผิว ข้อมือ และการเสริมแรงที่สอดคล้องกับการใช้งานเป้าหมาย ยืนยันตัวอย่างก่อนผลิตจริงเพื่อให้สัมผัสและโครงสร้างตรงกับตลาดของคุณ</p></div><div class="hp-faq-item"><h3>คุณให้รายงานการทดสอบหรือการรับรองหรือไม่?</h3><p>โรงงานจะเสนอราคาเมื่อขอบเขตชัดเจน เบื้องต้นแจ้งมาตรฐานที่ตลาดคุณต้องการ เช่น EN 388 ANSI/ISEA 105 EN 407 หรือ EN 12477 รวมถึงการทดสอบและรายงานที่ระบุชัดเจน แล้วเราจะยืนยันว่าหลักฐานปัจจุบันรองรับอะไรบ้าง</p></div><div class="hp-faq-item"><h3>ฉันเริ่มสอบถามกับ Fulide ได้อย่างไร?</h3><p>ส่งทิศทางสินค้า ตลาดเป้าหมาย จำนวน หมายเหตุโลโก้หรือบรรจุภัณฑ์ และเอกสารที่ต้องการ ไฟล์บรีฟที่ชัดเจนช่วยให้โรงงานเสนอราคาเร็วขึ้นและลดการทำตัวอย่างใหม่</p></div></div><div class="hp-hero-actions"><a class="btn green" href="https://wa.me/85255778242" target="_blank" rel="noopener">WhatsApp</a><a class="btn" href="th/inquiry-register.html">ลงทะเบียนสอบถาม</a></div></div></section>
   </main>
 
   <footer class="footer"><div class="container"><strong>Gaozhou Fulide Leather Products Co., Ltd.</strong><p>WhatsApp: <a href="https://wa.me/85255778242?text=" target="_blank" rel="noopener">+852 5577 8242</a> · WeChat: worktogether8 · โทรศัพท์จีน: +86 130 6695 7870 · อีเมล: <a href="mailto:delivervalue95@gmail.com">delivervalue95@gmail.com</a></p><p>หน้าเว็บแบบคงที่เขียนขึ้นเพื่อให้เครื่องมือค้นหาเก็บข้อมูลและให้ผู้ซื้อตรวจสอบ เปิดร่างการสอบถามในแอป WhatsApp หรืออีเมลของคุณ โดยเว็บไซต์ไม่ถือว่าการเปิดร่างคือการส่งสำเร็จ</p></div></footer>

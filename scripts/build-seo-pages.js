@@ -82,6 +82,54 @@ const I18N = {
     th: "ไม่ เกรดหนังเป็นแนวคิดเชิงพาณิชย์ในการเลือกวัสดุ ระดับการป้องกันของถุงมือมาจากการทดสอบเช่น EN 388 ANSI/ISEA 105 EN 407 หรือ EN 12477 เมื่อใช้ได้",
     id: "Tidak. Grad kulit adalah konsep pemilihan material komersial. Level proteksi sarung tangan berasal dari tes seperti EN 388, ANSI/ISEA 105, EN 407, atau EN 12477 bila berlaku.",
   },
+  faq3q: {
+    en: "What leather or materials do you use for safety gloves?",
+    "zh-CN": "你们用的是什么皮料或材料？",
+    ar: "ما الجلد أو المواد التي تستخدمونها للقفازات الواقية؟",
+    vi: "Bạn dùng da hoặc vật liệu nào cho găng tay bảo hộ?",
+    th: "คุณใช้หนังหรือวัสดุใดสำหรับถุงมือความปลอดภัย?",
+    id: "Kulit atau material apa yang Anda gunakan untuk sarung tangan keselamatan?",
+  },
+  faq3a: {
+    en: "Fulide selects leather by commercial grade — hide area, defect tolerance, thickness and hand feel — plus the lining, cuff and reinforcement materials matched to your target use. Confirm a sample before bulk so the feel and build match your market.",
+    "zh-CN": "福立得按商业等级选材：皮胚部位、瑕疵容忍度、厚度与手感，以及匹配目标用途的内里、袖口与补强材料。大货前确认样品，确保手感与做工符合您的市场。",
+    ar: "تختار فوليدي الجلد حسب الدرجة التجارية — منطقة الجلد وتحمل العيوب والسماكة والملمس — بالإضافة إلى البطانة والكفة ومواد التعزيز التي تطابق استخدامك المستهدف. أكد العينة قبل الإنتاج الكبير ليتطابق الملمس والبناء مع سوقك.",
+    vi: "Fulide chọn da theo cấp thương mại — vị trí da, dung sai lỗi, độ dày và cảm giác cầm — cùng vật liệu lót, cổ tay và gia cường phù hợp với mục đích dùng. Hãy xác nhận mẫu trước khi sản xuất loạt để cảm giác và cấu tạo khớp với thị trường của bạn.",
+    th: "Fulide เลือกหนังตามเกรดเชิงพาณิชย์ — พื้นที่หนัง ความทนทานต่อตำหนิ ความหนา และสัมผัส — รวมถึงวัสดุบุผิว ข้อมือ และการเสริมแรงที่สอดคล้องกับการใช้งานเป้าหมาย ยืนยันตัวอย่างก่อนผลิตจริงเพื่อให้สัมผัสและโครงสร้างตรงกับตลาดของคุณ",
+    id: "Fulide memilih kulit menurut grad komersial — area kulit, toleransi cacat, ketebalan, dan tekstur — plus material pelapis, manset, dan penguat yang cocok dengan kegunaan target. Konfirmasi sampel sebelum bulk agar tekstur dan build cocok dengan pasar Anda.",
+  },
+  faq4q: {
+    en: "Do you provide test reports or certifications?",
+    "zh-CN": "你们提供测试报告或认证吗？",
+    ar: "هل تقدمون تقارير اختبار أو شهادات؟",
+    vi: "Có cung cấp báo cáo kiểm nghiệm hoặc chứng nhận không?",
+    th: "คุณให้รายงานการทดสอบหรือการรับรองหรือไม่?",
+    id: "Apakah Anda memberikan laporan tes atau sertifikasi?",
+  },
+  faq4a: {
+    en: "The factory quotes only after the scope is clear. Tell us which standard your market needs — for example EN 388, ANSI/ISEA 105, EN 407 or EN 12477 — and which exact test and report it requires, and we will confirm what current evidence supports.",
+    "zh-CN": "范围清楚后工厂才报价。请告知您的市场需要哪个标准（如 EN 388、ANSI/ISEA 105、EN 407 或 EN 12477）以及具体测试与报告要求，我们会确认当前证据能支持哪些。",
+    ar: "لا يقدم المصنع عرض سعر إلا بعد وضوح النطاق. أخبرنا بالمعيار الذي يحتاجه سوقك — مثل EN 388 أو ANSI/ISEA 105 أو EN 407 أو EN 12477 — وما هو الاختبار والتقرير المطلوب تحديداً، وسنؤكد ما تدعمه الأدلة الحالية.",
+    vi: "Nhà máy chỉ báo giá sau khi phạm vi rõ ràng. Hãy cho biết thị trường bạn cần tiêu chuẩn nào — ví dụ EN 388, ANSI/ISEA 105, EN 407 hay EN 12477 — và bài kiểm cùng báo cáo cụ thể cần thiết, chúng tôi sẽ xác nhận bằng chứng hiện có hỗ trợ những gì.",
+    th: "โรงงานจะเสนอราคาเมื่อขอบเขตชัดเจน เบื้องต้นแจ้งมาตรฐานที่ตลาดคุณต้องการ เช่น EN 388 ANSI/ISEA 105 EN 407 หรือ EN 12477 รวมถึงการทดสอบและรายงานที่ระบุชัดเจน แล้วเราจะยืนยันว่าหลักฐานปัจจุบันรองรับอะไรบ้าง",
+    id: "Pabrik hanya akan quotation setelah ruang lingkup jelas. Beri tahu standar yang pasar Anda butuhkan — misal EN 388, ANSI/ISEA 105, EN 407, atau EN 12477 — serta tes dan laporan pasti yang diperlukan, dan kami akan konfirmasi bukti saat ini mendukung apa.",
+  },
+  faq5q: {
+    en: "How do I start an inquiry with Fulide?",
+    "zh-CN": "如何向福立得发起询盘？",
+    ar: "كيف أبدأ استفساراً مع فوليدي؟",
+    vi: "Làm sao để bắt đầu gửi báo giá cho Fulide?",
+    th: "ฉันเริ่มสอบถามกับ Fulide ได้อย่างไร?",
+    id: "Bagaimana cara memulai inquiry ke Fulide?",
+  },
+  faq5a: {
+    en: "Send your product direction, target market, quantity, logo or packing notes and required documents. A clear brief lets the factory quote faster and reduces sample rework.",
+    "zh-CN": "请发送产品方向、目标市场、数量、Logo 或包装要求以及所需文件。简明的需求说明能让工厂更快报价，也减少打样返工。",
+    ar: "أرسل اتجاه المنتج والسوق المستهدف والكمية وملاحظات الشعار أو التغليف والمستندات المطلوبة. الموجز الواضح يتيح للمصنع التسعير أسرع ويقلل إعادة عمل العينة.",
+    vi: "Gửi định hướng sản phẩm, thị trường mục tiêu, số lượng, ghi chú logo hoặc đóng gói và tài liệu cần thiết. Một brief rõ ràng giúp nhà máy báo giá nhanh hơn và giảm làm lại mẫu.",
+    th: "ส่งทิศทางสินค้า ตลาดเป้าหมาย จำนวน หมายเหตุโลโก้หรือบรรจุภัณฑ์ และเอกสารที่ต้องการ ไฟล์บรีฟที่ชัดเจนช่วยให้โรงงานเสนอราคาเร็วขึ้นและลดการทำตัวอย่างใหม่",
+    id: "Kirim arah produk, pasar target, jumlah, catatan logo atau kemasan, dan dokumen yang diperlukan. Brief yang jelas membuat pabrik quotation lebih cepat dan mengurangi revisi sampel.",
+  },
   openWhatsapp: { en: "Open WhatsApp inquiry draft", "zh-CN": "打开 WhatsApp 询盘草稿", ar: "افتح مسودة استفسار WhatsApp", vi: "Mở nháp yêu cầu WhatsApp", th: "เปิดร่างการสอบถาม WhatsApp", id: "Buka draf inquiry WhatsApp" },
   emailDraft: { en: "Email draft", "zh-CN": "邮箱草稿", ar: "مسودة بريد", vi: "Nháp email", th: "ร่างอีเมล", id: "Draf email" },
   viewDetails: { en: "View details", "zh-CN": "查看详情", ar: "عرض التفاصيل", vi: "Xem chi tiết", th: "ดูรายละเอียด", id: "Lihat detail" },
@@ -418,6 +466,7 @@ ${xdefault}
   <style>
     :root{--red:#8b1e1e;--ink:#121826;--muted:#596275;--line:#e5e7eb;--paper:#f7f4ef;--green:#176c3a}
     *{box-sizing:border-box}html,body{max-width:100%;overflow-x:hidden}body{margin:0;font-family:Arial,"Noto Sans SC","Microsoft YaHei",sans-serif;color:var(--ink);line-height:1.58;background:#fff}a{color:inherit}img{max-width:100%;display:block;height:auto}.container{width:min(1120px,calc(100% - 32px));margin:auto}.header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.brand{font-weight:900;text-decoration:none}.navlinks{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;font-weight:700;max-width:100%;align-items:center}.lang-switch{display:flex;gap:8px;flex-wrap:wrap;font-size:13px;font-weight:700;border-left:1px solid var(--line);padding-left:12px;margin-left:4px}.lang-switch a{text-decoration:none;color:var(--muted)}.lang-switch a[aria-current="true"]{color:var(--red)}.hero{background:var(--paper);padding:56px 0 34px}.crumbs{font-size:13px;color:var(--muted);margin-bottom:20px}.crumbs a{color:var(--red)}h1{font-size:clamp(34px,5vw,58px);line-height:1.05;margin:0 0 16px;overflow-wrap:anywhere}h2{font-size:26px;margin:0 0 14px;overflow-wrap:anywhere}.lead{font-size:18px;color:#303847;max-width:820px;overflow-wrap:anywhere}.band{padding:42px 0;border-bottom:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}.card{border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden}.card-body{padding:16px}.card h3{margin:0 0 8px;font-size:18px}.pill{display:inline-block;padding:4px 8px;border-radius:4px;background:#fff;border:1px solid var(--line);font-size:12px;font-weight:800;color:var(--red);margin-bottom:10px}.table{width:100%;border-collapse:collapse;background:#fff;table-layout:fixed}.table th,.table td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top;overflow-wrap:anywhere}.table th{width:30%}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:900;background:var(--red);color:#fff;white-space:normal;text-align:center}.btn.secondary{background:#fff;color:var(--red);border:1px solid var(--red)}.btn.green{background:var(--green);color:#fff}.note{font-size:13px;color:var(--muted);margin-top:14px}.footer{border-top:1px solid var(--line);padding:26px 0;font-size:14px;color:var(--muted)}.footer strong{color:var(--ink)}${rtlCss}
+    .faq{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:18px}.faq-item{border:1px solid var(--line);border-radius:8px;padding:16px 18px;background:#fff}.faq-q{margin:0 0 8px;font-size:17px;line-height:1.3;overflow-wrap:anywhere}.faq-a{margin:0;color:var(--muted);font-size:14px}
   </style>
 </head>
 <body>
@@ -445,6 +494,46 @@ function header(lang, lpFn) {
 function footer(lang) {
   const contactLine = `${T(lang, "whatsapp")}: <a href="${whatsappLink("")}" target="_blank" rel="noopener">${site.whatsappDisplay}</a> · ${T(lang, "wechat")}: ${site.wechat} · ${T(lang, "chinaPhone")}: ${site.chinaPhone} · ${T(lang, "email")}: <a href="mailto:${site.email}">${site.email}</a>`;
   return `<footer class="footer"><div class="container"><strong>${site.company}</strong><p>${contactLine}</p><p>${T(lang, "disclaimer")}</p></div></footer>`;
+}
+
+// --- FAQ rich-result helpers (FAQPage schema + visible PAA-style FAQ) ---
+const FAQ_KEYS = ["faq1", "faq2", "faq3", "faq4", "faq5"];
+function faqItems(lang, keys = FAQ_KEYS) {
+  return keys.map((k) => ({ q: T(lang, k + "q"), a: T(lang, k + "a") }));
+}
+function faqSchema(lang, keys = FAQ_KEYS) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems(lang, keys).map((it) => ({
+      "@type": "Question",
+      "name": it.q,
+      "acceptedAnswer": { "@type": "Answer", "text": it.a },
+    })),
+  };
+}
+function breadcrumbSchema(lang, items) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": items.map((it, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": it.name,
+      "item": it.url,
+    })),
+  };
+}
+function faqSection(lang, opts = {}) {
+  const keys = opts.keys || FAQ_KEYS;
+  const title = opts.title || T(lang, "buyerFaqTitle");
+  const items = faqItems(lang, keys).map((it) => `
+      <div class="faq-item">
+        <h3 class="faq-q">${escapeHtml(it.q)}</h3>
+        <div class="faq-a">${escapeHtml(it.a)}</div>
+      </div>`).join("");
+  const cta = `<div class="actions"><a class="btn green" href="${whatsappLink("")}" target="_blank" rel="noopener">${escapeHtml(T(lang, "openWhatsapp"))}</a></div>`;
+  return `    <section class="band" id="faq"><div class="container"><h2>${escapeHtml(title)}</h2><div class="faq">${items}</div>${cta}</div></section>`;
 }
 
 function productCards(category, lang) {
@@ -487,6 +576,7 @@ function categoryPage(cat, lang) {
       const url = product.detail ? `${site.baseUrl}/${prodPath(product, lang)}` : canonical;
       return { "@type": "ListItem", position: idx + 1, name: pick(product, "name", lang), url: url };
     }) },
+    faqSchema(lang, ["faq1", "faq2"]),
   ];
   const body = `${header(lang, lp)}
   <main>
@@ -545,8 +635,17 @@ function guidePage(lang) {
     <tr><td>${T(lang, "row3Topic")}</td><td>${escapeHtml(T(lang, "row3Means"))}</td><td>${escapeHtml(T(lang, "row3Action"))}</td></tr>
     <tr><td>${T(lang, "row4Topic")}</td><td>${escapeHtml(T(lang, "row4Means"))}</td><td>${escapeHtml(T(lang, "row4Action"))}</td></tr>
     </tbody></table></div></section>
+${faqSection(lang)}
   </main>${footer(lang)}`;
-  return pageShell({ lang, title, description, body, schema: { "@context": "https://schema.org", "@type": "WebPage", name: title, description: description, url: canonical }, lpFn: lp });
+  const schema = [
+    { "@context": "https://schema.org", "@type": "WebPage", name: title, description: description, url: canonical },
+    breadcrumbSchema(lang, [
+      { name: T(lang, "home"), url: `${site.baseUrl}/${homePath(lang)}` },
+      { name: T(lang, "crumbGuides"), url: canonical },
+    ]),
+    faqSchema(lang),
+  ];
+  return pageShell({ lang, title, description, body, schema, lpFn: lp });
 }
 
 function factoryPage(lang) {
@@ -562,7 +661,14 @@ function factoryPage(lang) {
     <section class="band"><div class="container"><h2>${T(lang, "productionEvidence")}</h2><div class="grid">${imgs.map((src) => `<article class="card">${imageTag(src, T(lang, "factoryTitle"), false, assetPrefix)}<div class="card-body"><p>${escapeHtml(T(lang, "evidenceText"))}</p></div></article>`).join("")}</div></div></section>
     <section class="band"><div class="container"><h2>${T(lang, "qualityProcess")}</h2><table class="table"><tbody><tr><th>${T(lang, "beforeQuote")}</th><td>${escapeHtml(T(lang, "beforeQuoteText"))}</td></tr><tr><th>${T(lang, "sampleConfirm")}</th><td>${escapeHtml(T(lang, "sampleConfirmText"))}</td></tr><tr><th>${T(lang, "bulkReview")}</th><td>${escapeHtml(T(lang, "bulkReviewText"))}</td></tr></tbody></table></div></section>
   </main>${footer(lang)}`;
-  return pageShell({ lang, title, description, body, schema: { "@context": "https://schema.org", "@type": "AboutPage", name: title, description: description, url: canonical }, lpFn: lp });
+  const schema = [
+    { "@context": "https://schema.org", "@type": "AboutPage", name: title, description: description, url: canonical },
+    breadcrumbSchema(lang, [
+      { name: T(lang, "home"), url: `${site.baseUrl}/${homePath(lang)}` },
+      { name: T(lang, "crumbFactory"), url: canonical },
+    ]),
+  ];
+  return pageShell({ lang, title, description, body, schema, lpFn: lp });
 }
 
 function inquiryPage(lang) {
@@ -577,7 +683,14 @@ function inquiryPage(lang) {
     <section class="hero"><div class="container"><h1>${escapeHtml(title)}</h1><p class="lead">${escapeHtml(description)}</p><div class="actions"><a class="btn" href="${csvHref}">${T(lang, "downloadCsv")}</a><a class="btn secondary" href="${sendHref}">${T(lang, "sendInquiry")}</a></div></div></section>
     <section class="band"><div class="container"><table class="table"><thead><tr><th>${T(lang, "thSource")}</th><th>${T(lang, "thProduct")}</th><th>${T(lang, "thQuantity")}</th><th>${T(lang, "thQuote")}</th><th>${T(lang, "thSample")}</th><th>${T(lang, "thOrder")}</th></tr></thead><tbody><tr><td>${T(lang, "rowSource")}</td><td>${T(lang, "rowProduct")}</td><td>${T(lang, "rowQuantity")}</td><td>${T(lang, "rowQuote")}</td><td>${T(lang, "rowSample")}</td><td>${T(lang, "rowOrder")}</td></tr></tbody></table><p class="note">${escapeHtml(T(lang, "inquiryNote"))}</p></div></section>
   </main>${footer(lang)}`;
-  return pageShell({ lang, title, description, body, schema: { "@context": "https://schema.org", "@type": "WebPage", name: title, description: description, url: canonical }, lpFn: lp });
+  const schema = [
+    { "@context": "https://schema.org", "@type": "WebPage", name: title, description: description, url: canonical },
+    breadcrumbSchema(lang, [
+      { name: T(lang, "home"), url: `${site.baseUrl}/${homePath(lang)}` },
+      { name: T(lang, "inquiry"), url: canonical },
+    ]),
+  ];
+  return pageShell({ lang, title, description, body, schema, lpFn: lp });
 }
 
 function write(relative, content) {
@@ -635,6 +748,7 @@ module.exports = {
   outPrefix, homePath, catPath, prodPath, guidePath, factoryPath, inquiryPath,
   whatsappLink, mailtoLink, imageTag, escapeHtml, gaMeasurementId,
   header, footer, pageShell,
+  FAQ_KEYS, faqItems, faqSchema, faqSection, breadcrumbSchema,
 };
 
 if (require.main === module) main();
